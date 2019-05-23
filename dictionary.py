@@ -20,4 +20,10 @@ word = (input("Enter world: ")).lower()
 
 
 
-print(translate(word))
+output = translate(word)
+
+if type(output) == list:
+    for i in output:
+        print(i)
+else:
+    print(output)
